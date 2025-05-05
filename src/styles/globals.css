@@ -1,26 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-html, body {
-  font-family: 'Poppins', sans-serif; /* Ensure Poppins is applied globally */
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.news-ticker {
-  display: inline-flex;
-  min-width: 200%; /* Ensure enough width for smooth scrolling */
-  animation: ticker 30s linear infinite;
-  will-change: transform;
-}
-
-@keyframes ticker {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
